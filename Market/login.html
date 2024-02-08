@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main {
+        
+            padding: 20px;
+            border: 5px solid black;
+            border-radius: 10px;
+            height: 220px;
+            width: 200px;
+        }
+
+        .login_button {
+            margin-top: 20px;
+        }
+
+        .name_login {
+            text-align: center;
+            border-bottom: 4px black;
+            margin-bottom: 20px;
+            border-bottom: 3px solid black;
+            padding-bottom: 10px;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        .login_button {
+            text-align: center;
+        }
+
+        .username_txt {
+            margin-bottom: 8px;
+            font-size: 16px;
+
+        }
+
+        .username_input {
+            margin-bottom: 10px;
+
+        }
+
+        .password_txt {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .hi {
+            background-color: lightpink;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .hi:hover {
+            background-color: lightcoral;
+        }
+
+        .username_input {
+            width: 180px;
+        }
+
+        .password_input {
+            width: 180px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="name_login">LOGIN</div>
+        <div class="username_txt">Username</div>
+        <input type="text" class="username_input" required>
+        <div class="password_txt">Password</div>
+        <input type="password" class="password_input" id="pwd" required>
+        <div class="login_button">
+            <button class="hi">Login</button>
+        </div>
+    </div>
+</body>
+</html>

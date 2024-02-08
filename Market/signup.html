@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <style>
+
+        .main {
+            border: 5px solid black;
+            border-radius: 10px;
+        
+            width: 300px;
+            padding-top: 20px;
+            
+        }
+        
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signup_text {
+            text-align: center;
+            border-bottom: 4px black;
+            margin-bottom: 20px;
+            border-bottom: 3px solid black;
+            padding-bottom: 10px;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        .name_text,.contact_text,.address_text,.username_text,.password_text,.retype_password_text {
+            margin-bottom: 6px;
+            color: black;
+            font-size: 17px;
+            padding-left: 20px;
+        }
+
+        .name_input,.contact_input,.address_input,.username_input,.password_input,.retype_password_input {
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        .address_input_box {
+            height: 50px;
+            width: 250px;
+        }    
+
+        .button_class {
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 35px;
+        }
+
+        .the_button {
+            background-color: pink;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .the_button:hover {
+            background-color: lightcoral;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="signup_text">SIGNUP</div>
+        <div class="name_text">Name</div>
+        <div class="name_input">
+            <input>
+        </div>
+        
+        <div class="contact_text">Contact Number</div>
+        <div class="contact_input">
+            <input>
+        </div>
+
+        <div class="address_text">Address</div>
+        <div class="address_input">
+            <input class="address_input_box">
+        </div>
+        <div class="username_text">Username</div>
+        <div class="username_input">
+            <input>
+        </div>
+        <div class="password_text">Password</div>
+        <div class="password_input">
+            <input type="password" id="password" required>
+        </div>
+        <div class="retype_password_text">Retype Password</div>
+        <div class="retype_password_input">
+            <input type="password" id="password" required>
+        </div>
+        <div class="button_class">
+            <button class="the_button">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>

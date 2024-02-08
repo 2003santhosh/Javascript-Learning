@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Webpage</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+        }
+
+        .image-vegetable {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .Image {
+            width: 200px;
+            border-radius: 10px;
+            background-color: white;
+            border: 3px solid black;
+        
+        }
+
+        .main_class {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 50px;
+            row-gap: 30px;
+        }
+
+        .info {
+            background-color: white;
+            line-height: 5px;
+            border-radius: 6px;
+        }
+
+        .name {
+            color: rgb(112, 109, 109);
+            padding-left: 10px;
+        }
+
+        .rate {
+            color: black;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+
+        .cartbutton {
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .button_class {
+            background-color: lightpink;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button_class:hover {
+            background-color: lightcoral;
+        }
+
+        .div_3 .button_class {
+            background-color: black;
+        }
+
+        .plus_div,
+        .minus_div {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .minus_div {
+            background-color: white;
+            color: black;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_class">
+        <!-- Repeat the following block for each product -->
+        <div class="Image">
+            <img src="pixlr-image-generator-cd872a59-3dcb-4777-85ba-3d8557d7c88c.png" class="image-vegetable">
+            <div class="info">
+                <div class="name">
+                    <p>Carrot - orange (loose)</p>
+                </div>
+                <div class="rate">
+                    <p>Rate - $66/kg</p>
+                </div>
+                <div class="cartbutton">
+                    <div class="div_1">
+                        <button class="button_class" onclick="switchToDiv3(this)">Add to cart</button>
+                    </div>
+                    <div class="div_3 hidden">
+                        <button class="plus_div">&#43;</button>
+                        <button class="minus_div">&#8722;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="pixlr-image-generator-cd872a59-3dcb-4777-85ba-3d8557d7c88c.png" class="image-vegetable">
+            <div class="info">
+                <div class="name">
+                    <p>Carrot - orange (loose)</p>
+                </div>
+                <div class="rate">
+                    <p>Rate - $66/kg</p>
+                </div>
+                <div class="cartbutton">
+                    <div class="div_1">
+                        <button class="button_class" onclick="switchToDiv3(this)">Add to cart</button>
+                    </div>
+                    <div class="div_3 hidden">
+                        <button class="plus_div">&#43;</button>
+                        <button class="minus_div">&#8722;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="pixlr-image-generator-cd872a59-3dcb-4777-85ba-3d8557d7c88c.png" class="image-vegetable">
+            <div class="info">
+                <div class="name">
+                    <p>Carrot - orange (loose)</p>
+                </div>
+                <div class="rate">
+                    <p>Rate - $66/kg</p>
+                </div>
+                <div class="cartbutton">
+                    <div class="div_1">
+                        <button class="button_class" onclick="switchToDiv3(this)">Add to cart</button>
+                    </div>
+                    <div class="div_3 hidden">
+                        <button class="plus_div">&#43;</button>
+                        <button class="minus_div">&#8722;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="pixlr-image-generator-cd872a59-3dcb-4777-85ba-3d8557d7c88c.png" class="image-vegetable">
+            <div class="info">
+                <div class="name">
+                    <p>Carrot - orange (loose)</p>
+                </div>
+                <div class="rate">
+                    <p>Rate - $66/kg</p>
+                </div>
+                <div class="cartbutton">
+                    <div class="div_1">
+                        <button class="button_class" onclick="switchToDiv3(this)">Add to cart</button>
+                    </div>
+                    <div class="div_3 hidden">
+                        <button class="plus_div">&#43;</button>
+                        <button class="minus_div">&#8722;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="pixlr-image-generator-cd872a59-3dcb-4777-85ba-3d8557d7c88c.png" class="image-vegetable">
+            <div class="info">
+                <div class="name">
+                    <p>Carrot - orange (loose)</p>
+                </div>
+                <div class="rate">
+                    <p>Rate - $66/kg</p>
+                </div>
+                <div class="cartbutton">
+                    <div class="div_1">
+                        <button class="button_class" onclick="switchToDiv3(this)">Add to cart</button>
+                    </div>
+                    <div class="div_3 hidden">
+                        <button class="plus_div">&#43;</button>
+                        <button class="minus_div">&#8722;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Image">
+            <img src="pixlr-image-generator-cd872a59-3dcb-4777-85ba-3d8557d7c88c.png" class="image-vegetable">
+            <div class="info">
+                <div class="name">
+                    <p>Carrot - orange (loose)</p>
+                </div>
+                <div class="rate">
+                    <p>Rate - $66/kg</p>
+                </div>
+                <div class="cartbutton">
+                    <div class="div_1">
+                        <button class="button_class" onclick="switchToDiv3(this)">Add to cart</button>
+                    </div>
+                    <div class="div_3" hidden>
+                        <button class="plus_div">&#43;</button>
+                        <button class="minus_div">&#8722;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above block for each product -->
+    </div>
+
+    <script>
+        function switchToDiv3(button) {
+            // Hide div_1 for the clicked button
+            button.closest('.div_1').style.display = 'none';
+
+            // Show div_3 for the clicked button
+            button.closest('.cartbutton').querySelector('.div_3').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+<!--the active transtion on the image-->
+<!--Header-->

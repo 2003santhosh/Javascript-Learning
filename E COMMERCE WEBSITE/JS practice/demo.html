@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cart Quantity</title>
+    </head>
+    <body>
+        <p>This is the variable website</p>
+        <button title="Show Quantity" onclick="
+            console.log(`Cart quantity : ${cartquantity}`)
+        ">Show Quantity</button>
+        <button title="Add to cart" onclick="
+            cartquantity+=1
+            console.log(`cart quantity : ${cartquantity}`)
+        ">Add to cart</button>
+        <button title="+2" onclick="
+            cartquantity+=2
+            concsole.log(`cart quantity : ${cartquantity}`)
+        ">+2</button>
+        <button title="+3" onclick="
+            cartquantity+=3
+            concsole.log(`cart quantity : ${cartquantity}`)
+
+        ">+3</button>
+            
+        <button title="Reset cart" onclick="
+            cartquantity = 0;
+            console.log(`cart quantity : ${cartquantity}`)
+        ">Reset cart</button>
+
+    </body>
+    <script>
+        let cartquantity = 0;
+    </script>
+</html>

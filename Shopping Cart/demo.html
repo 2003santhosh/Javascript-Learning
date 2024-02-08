@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        this is the header for the website
+    </header>
+    <div class="main">
+        <div class="main_2">
+            <div class="dress_1">
+                <div class="img">
+                    <img class="img_2" src="Microsoft-Logo-T-Shirt-For-Men_s-2_large.webp">
+                </div>
+                <div class="info">
+                    <div class="title">Microsoft T-Shirt</div>
+                    <div class="rate">$16</div>
+                </div>
+                <div class="cartbutton">
+                    <div class="button">
+                        <button class="button_class" onclick="switchToDiv3(this)">Add to cart</button>
+                    </div>
+                    <div class="div_3" hidden>
+                        <button class="plus_div" onclick="add_func(document.getElementById('num_value_2'))">&#43;</button>
+                        <p class="num_value" id="num_value_2">1</p>
+                        <button class="minus_div" onclick="minus_func(document.getElementById('num_value_2'))">&#8722;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dress_1">
+                <div class="img">
+                    <img class="img_2" src="Microsoft-Logo-T-Shirt-For-Men_s-2_large.webp">
+                </div>
+                <div class="info">
+                    <div class="title">Microsoft T-Shirt</div>
+                    <div class="rate">$16</div>
+                </div>
+                <div class="cartbutton">
+                    <div class="button">
+                        <button class="button_class" onclick="switchToDiv3(this)">Add to cart</button>
+                    </div>
+                    <div class="div_3" hidden>
+                        <button class="plus_div" onclick="add_func(document.getElementById('num_value_1'))">&#43;</button>
+                        <p class="num_value" id="num_value_1">1</p>
+                        <button class="minus_div" onclick="minus_func(document.getElementById('num_value_1'))">&#8722;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchToDiv3(button) {
+            // Hide div_1 for the clicked button
+            button.closest('.button').style.display = 'none';
+
+            // Show div_3 for the clicked button
+            button.closest('.cartbutton').querySelector('.div_3').style.display = 'block';
+        }
+
+        function add_func(numValueElement) {
+            let num_value = numValueElement.innerHTML;
+            let numval = Number(num_value);
+            numval++;
+            numValueElement.innerHTML = numval;
+        }
+
+        function minus_func(numValueElement) {
+            let num_value = numValueElement.innerHTML;
+            let numval = Number(num_value);
+
+            if (numval > 0) {
+                numval--;
+                numValueElement.innerHTML = numval;
+            }
+        }
+    </script>
+</body>
+</html>
